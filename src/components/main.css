@@ -1,0 +1,24 @@
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.back_btn{
+    height: 60px;
+    align-self: center;
+}
+.next_btn{
+    height: 60px;
+    align-self: center;
+}
+
+.MuiButtonBase-root{
+    border-radius: 50px !important;
+    background-color: white !important;
+}
+
+.MuiSvgIcon-root {
+    height: 1em !important;
+    font-size: 1.9rem !important;
+    color: none !important;
+}
