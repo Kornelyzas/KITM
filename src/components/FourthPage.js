@@ -1,24 +1,30 @@
 import React from 'react'
-import './imageCover.css'
+import './fourthPage.css'
 import Image from 'react-bootstrap/Image'
-import image from '../images/virselis.png'
-import imagee from '../images/lapas 1.png'
+import image from '../images/lapas 3.png'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { useHistory } from "react-router-dom";
 
 
-function ImageCover() {
-
+function FourthPage() {
     const history = useHistory();
+  
+    const handleRouteBack = () =>{ 
+        history.push("/third_Page");
+    }
 
     const handleRouteForward = () =>{ 
-        history.push("/second_page");
+        history.push("/fifth_Page");
     }
 
     return (
-        <div className='img_cover'>
+        <div className='FourthPage'>
+            <Button variant="contained" className='back_btn' onClick={handleRouteBack}>
+                <ArrowBackIosIcon/>
+            </Button>
+
             <Image src={image} fluid />
 
             <Button variant="contained" className='next_btn' onClick={handleRouteForward}>
@@ -28,4 +34,4 @@ function ImageCover() {
     )
 }
 
-export default ImageCover
+export default FourthPage

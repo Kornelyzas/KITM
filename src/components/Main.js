@@ -4,7 +4,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Page from './Page';
-import { DonutLarge } from '@material-ui/icons';
+import ImageCover from './ImageCover';
 
 function Main() {
     return (
@@ -13,7 +13,8 @@ function Main() {
                 <ArrowBackIosIcon/>
             </Button>
 
-            <Page/>
+            <ImageCover/>
+            
             
             <Button variant="contained" className='next_btn'>
                 <ArrowForwardIosIcon/>

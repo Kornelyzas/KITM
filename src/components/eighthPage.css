@@ -1,10 +1,10 @@
-.img_cover{
+.EighthPage{
     display: flex;
     justify-content: center;
     padding-top: 2%;
-    padding-bottom: 2%; 
+    padding-bottom: 2%;
 }
 .img-fluid{
     height: 42vw;
-    width: 29%;  
+    width: 29%;
 }
